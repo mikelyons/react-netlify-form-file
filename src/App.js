@@ -25,6 +25,8 @@ function App() {
 
   const handleSubmit = e => {
     const data = { "form-name": "contact", name, email, message, file }
+
+    console.log(file);
     
     fetch("/", {
       method: "POST",
